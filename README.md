@@ -9,10 +9,14 @@ After cloning or downloading run npm install to install all node_modules!
     For Development: npm run dev
 
     For production: npm run build
+    
+////// Creating Scss file
+
+    naming them _filename.scss
 
 ////// Importing Scss files to Main.scss
 
-    @import 'route to file';
+    @import 'route to file/_filename.scss'; or @import 'route to file/filename'
 
 ////// Calling Fonts
 
