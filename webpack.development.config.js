@@ -9,6 +9,7 @@ module.exports = {
         publicPath: ''
     },
     mode: 'development',
+    watch: true,
     module: {
         rules: [
             {
@@ -25,6 +26,14 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'
+                ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
                 ]
             },
             {
@@ -45,3 +54,4 @@ module.exports = {
         })
     ]
 }
+
